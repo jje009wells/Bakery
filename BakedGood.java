@@ -25,5 +25,26 @@ public class BakedGood
         this.quantity = quantity;
     }
 
+    //modify the quantity
+    public void increaseQuantity(int count)
+    {
+        this.quantity += count;
+    }
     
+    //strings
+    public String toString()
+    {
+        return "baked good: " + this.name + " (" + this.quantity + " @$" + this.price + ")";
+    }
+    
+    public static void main(String[] args)
+    {
+        BakedGood croissant = new BakedGood("croissant", "butter, flour, laminate, yum", 20.0, 0);
+        //bake a dozen croissants
+        croissant.increaseQuantity(12);
+        System.out.println(croissant);
+        //bake 3 more
+        croissant.increaseQuantity(3);
+        System.out.println(croissant);
+    }
 }
