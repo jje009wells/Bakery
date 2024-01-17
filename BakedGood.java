@@ -9,8 +9,8 @@ public class BakedGood
 {
     // instance variables
     private String name;
-    private String recipe;
-    private double itemPrice;
+    private String recipe; 
+    private float itemPrice
     private int quantity;
 
     /**
