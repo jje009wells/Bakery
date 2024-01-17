@@ -10,7 +10,7 @@ public class BakedGood
     // instance variables
     private String name;
     private String recipe;
-    private double price;
+    private float price;
     private int quantity;
 
     /**
